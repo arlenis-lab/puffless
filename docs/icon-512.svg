@@ -2,14 +2,11 @@
   <!-- Dark background circle -->
   <circle cx="256" cy="256" r="256" fill="#1e1c22"/>
   <!-- Stylised "P" lettermark in lavender (var(--accent) #b8a9e8).
-       Drawn as thick stroked paths so it renders identically everywhere
-       with no font dependency. The bowl stops short of the stem, leaving
-       a deliberate gap that suggests "breaking free". -->
+       The bowl stops short of the stem, leaving a deliberate gap
+       that suggests "breaking free". -->
   <g stroke="#b8a9e8" stroke-width="56" fill="none"
      stroke-linecap="round" stroke-linejoin="round">
-    <!-- Stem -->
     <path d="M184 150 V374"/>
-    <!-- Bowl: top connects to stem, bottom ends early → break/gap -->
     <path d="M184 150 H290 A63 63 0 0 1 290 274 H216"/>
   </g>
 </svg>

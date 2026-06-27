@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="192" height="192">
+  <!-- Dark background circle -->
+  <circle cx="256" cy="256" r="256" fill="#1e1c22"/>
+  <!-- Stylised "P" lettermark in lavender (var(--accent) #b8a9e8).
+       The bowl stops short of the stem, leaving a deliberate gap
+       that suggests "breaking free". -->
+  <g stroke="#b8a9e8" stroke-width="56" fill="none"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M184 150 V374"/>
+    <path d="M184 150 H290 A63 63 0 0 1 290 274 H216"/>
+  </g>
+</svg>
