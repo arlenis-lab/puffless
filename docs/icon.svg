@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dark rounded square background -->
+  <rect width="512" height="512" rx="114" fill="#0f0e13"/>
+  <!-- Stylised "P" lettermark in lavender — drawn as a thick stroked path so it
+       renders identically in every browser with no font dependency.
+       Path: bottom of stem → up to top → bowl top → curve around bowl → bowl bottom → back to stem. -->
+  <path
+    d="M 174 396 L 174 116 L 272 116 C 362 116 362 272 272 272 L 174 272"
+    stroke="#b8a9e8"
+    stroke-width="60"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
