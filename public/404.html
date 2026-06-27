@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f0e13" />
+    <title>Puffless</title>
+    <!-- GitHub Pages SPA redirect:
+         Save the requested path in sessionStorage, then bounce to the
+         app root. index.html picks it up and replaces the history entry
+         so React Router sees the correct path on load. -->
+    <script>
+      sessionStorage.setItem('redirect', window.location.pathname)
+      window.location.replace('/puffless/')
+    </script>
+  </head>
+  <body>
+    <!-- Redirecting… -->
+  </body>
+</html>

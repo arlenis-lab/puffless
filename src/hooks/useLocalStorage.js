@@ -1,0 +1,26 @@
+import { useState, useEffect } from 'react'
+
+/**
+ * Like useState, but persists to localStorage under `key`.
+ * Handles JSON serialisation / parse errors gracefully.
+ */
+export function useLocalStorage(key, initialValue) {
+  const [value, setValue] = useState(() => {
+    try {
+      const raw = localStorage.getItem(key)
+      return raw !== null ? JSON.parse(raw) : initialValue
+    } catch {
+      return initialValue
+    }
+  })
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, JSON.stringify(value))
+    } catch {
+      // Storage quota exceeded or private-browsing restriction — silently ignore
+    }
+  }, [key, value])
+
+  return [value, setValue]
+}
